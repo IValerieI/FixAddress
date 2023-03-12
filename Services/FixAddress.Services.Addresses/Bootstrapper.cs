@@ -1,12 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace FixAddress.Services.Addresses
+namespace FixAddress.Services.Addresses;
+
+
+public static class Bootstrapper
 {
-    internal class Bootstrapper
+    /// <summary>
+    /// Добавляет AddressService в DI контейнер
+    /// </summary>
+    /// <param name="services"></param>
+    /// <returns></returns>
+    public static IServiceCollection AddAddressService(this IServiceCollection services)
     {
+        services.AddSingleton<IAddressService, AddressService>();
+        return services;
     }
+
 }

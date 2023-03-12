@@ -1,11 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "Y7BG33FOlaTbAVrvPywxN98fErKhdOUcuq5Cq8Y+S1JhOkn2j+34F16e98eLgLTFHmayzdHKS/khA7/UDuFqAA==",
+  "dgSpecHash": "FAnxLkydJ2UT1HFLT1MM8x5Wh0MqanyhDI7TjcBGG/ww7QuUJETyeF1eS6tc0mp8gRBCt3GUerFjMc7qxBRtxQ==",
   "success": true,
   "projectFilePath": "C:\\projects\\.NET\\Internship\\QPD\\Project\\Systems\\Api\\FixAddress.Api\\FixAddress.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Valeria\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Valeria\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Valeria\\.nuget\\packages\\dadata\\22.6.0\\dadata.22.6.0.nupkg.sha512",
-    "C:\\Users\\Valeria\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512"
+    "C:\\Users\\Valeria\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Valeria\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\Valeria\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Valeria\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\Valeria\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Valeria\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Valeria\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

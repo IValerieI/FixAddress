@@ -6,16 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "FixAddress.Api/1.0.0": {
+      "FixAddress.Services.Addresses/1.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
           "Dadata": "22.6.0",
-          "FixAddress.Services.Addresses": "1.0.0",
           "Microsoft.Extensions.DependencyInjection": "7.0.0"
         },
         "runtime": {
-          "FixAddress.Api.dll": {}
+          "FixAddress.Services.Addresses.dll": {}
         }
       },
       "AutoMapper/12.0.1": {
@@ -76,11 +75,23 @@
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
           "Microsoft.Extensions.Primitives": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
         }
       },
       "Microsoft.Extensions.Primitives/6.0.0": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
         }
       },
       "Newtonsoft.Json/12.0.2": {
@@ -91,22 +102,11 @@
           }
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
-      "FixAddress.Services.Addresses/1.0.0": {
-        "dependencies": {
-          "AutoMapper": "12.0.1",
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
-          "Dadata": "22.6.0",
-          "Microsoft.Extensions.DependencyInjection": "7.0.0"
-        },
-        "runtime": {
-          "FixAddress.Services.Addresses.dll": {}
-        }
-      }
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {}
     }
   },
   "libraries": {
-    "FixAddress.Api/1.0.0": {
+    "FixAddress.Services.Addresses/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -180,11 +180,6 @@
       "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
       "path": "system.runtime.compilerservices.unsafe/6.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
-    },
-    "FixAddress.Services.Addresses/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }

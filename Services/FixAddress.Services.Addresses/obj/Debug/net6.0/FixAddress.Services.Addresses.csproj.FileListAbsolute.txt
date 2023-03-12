@@ -1,0 +1,12 @@
+C:\projects\.NET\Internship\QPD\Project\Services\FixAddress.Services.Addresses\bin\Debug\net6.0\FixAddress.Services.Addresses.deps.json
+C:\projects\.NET\Internship\QPD\Project\Services\FixAddress.Services.Addresses\bin\Debug\net6.0\FixAddress.Services.Addresses.dll
+C:\projects\.NET\Internship\QPD\Project\Services\FixAddress.Services.Addresses\bin\Debug\net6.0\FixAddress.Services.Addresses.pdb
+C:\projects\.NET\Internship\QPD\Project\Services\FixAddress.Services.Addresses\obj\Debug\net6.0\FixAddress.Services.Addresses.csproj.AssemblyReference.cache
+C:\projects\.NET\Internship\QPD\Project\Services\FixAddress.Services.Addresses\obj\Debug\net6.0\FixAddress.Services.Addresses.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\.NET\Internship\QPD\Project\Services\FixAddress.Services.Addresses\obj\Debug\net6.0\FixAddress.Services.Addresses.AssemblyInfoInputs.cache
+C:\projects\.NET\Internship\QPD\Project\Services\FixAddress.Services.Addresses\obj\Debug\net6.0\FixAddress.Services.Addresses.AssemblyInfo.cs
+C:\projects\.NET\Internship\QPD\Project\Services\FixAddress.Services.Addresses\obj\Debug\net6.0\FixAddress.Services.Addresses.csproj.CoreCompileInputs.cache
+C:\projects\.NET\Internship\QPD\Project\Services\FixAddress.Services.Addresses\obj\Debug\net6.0\FixAddress.Services.Addresses.dll
+C:\projects\.NET\Internship\QPD\Project\Services\FixAddress.Services.Addresses\obj\Debug\net6.0\refint\FixAddress.Services.Addresses.dll
+C:\projects\.NET\Internship\QPD\Project\Services\FixAddress.Services.Addresses\obj\Debug\net6.0\FixAddress.Services.Addresses.pdb
+C:\projects\.NET\Internship\QPD\Project\Services\FixAddress.Services.Addresses\obj\Debug\net6.0\ref\FixAddress.Services.Addresses.dll

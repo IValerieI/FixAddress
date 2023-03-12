@@ -27,3 +27,9 @@ C:\projects\.NET\Internship\QPD\Project\Systems\Api\FixAddress.Api\obj\Debug\net
 C:\projects\.NET\Internship\QPD\Project\Systems\Api\FixAddress.Api\obj\Debug\net6.0\FixAddress.Api.pdb
 C:\projects\.NET\Internship\QPD\Project\Systems\Api\FixAddress.Api\obj\Debug\net6.0\FixAddress.Api.genruntimeconfig.cache
 C:\projects\.NET\Internship\QPD\Project\Systems\Api\FixAddress.Api\obj\Debug\net6.0\ref\FixAddress.Api.dll
+C:\projects\.NET\Internship\QPD\Project\Systems\Api\FixAddress.Api\bin\Debug\net6.0\AutoMapper.dll
+C:\projects\.NET\Internship\QPD\Project\Systems\Api\FixAddress.Api\bin\Debug\net6.0\FixAddress.Services.Addresses.dll
+C:\projects\.NET\Internship\QPD\Project\Systems\Api\FixAddress.Api\bin\Debug\net6.0\FixAddress.Services.Addresses.pdb
+C:\projects\.NET\Internship\QPD\Project\Systems\Api\FixAddress.Api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\projects\.NET\Internship\QPD\Project\Systems\Api\FixAddress.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\projects\.NET\Internship\QPD\Project\Systems\Api\FixAddress.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
