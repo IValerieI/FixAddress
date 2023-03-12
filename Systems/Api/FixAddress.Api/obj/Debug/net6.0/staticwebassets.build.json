@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "q/LLReWHWlbiJvC5/WqYRBH6kdOlQVhu/a4x58ASr/I=",
+  "Source": "FixAddress.Api",
+  "BasePath": "_content/FixAddress.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
