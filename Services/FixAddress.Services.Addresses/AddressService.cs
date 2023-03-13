@@ -15,12 +15,15 @@ public class AddressService : IAddressService
 
     private readonly IMapper mapper;
     private readonly IConfiguration configuration;
+    private readonly IHttpClientFactory httpClientFactory;
 
-    public AddressService(IMapper mapper, IConfiguration configuration)
+    public AddressService(IMapper mapper, IConfiguration configuration, IHttpClientFactory httpClientFactory)
     {
         this.mapper = mapper;
         this.configuration = configuration;
+        this.httpClientFactory = httpClientFactory;
 
+        // Получает значения из appsettings.Development.json
         this.token = configuration.GetSection("Token").Value;
         this.secret = configuration.GetSection("Secret").Value;
         this.url = configuration.GetSection("URL").Value;
@@ -51,16 +54,20 @@ public class AddressService : IAddressService
     /// <returns></returns>
     public async Task<string> GetAddressDetail(string brokenAddress)
     {
+        // Приводит адрес к нужному для запроса виду
         StringContent content = new StringContent("[ \"" + brokenAddress + "\" ]", System.Text.Encoding.UTF8, "application/json");
 
+        var httpClient = httpClientFactory.CreateClient();
         using var request = new HttpRequestMessage(HttpMethod.Post, url);
         request.Content = content;
 
+        // Добавляет к запросу нужные для аутентификации заголовки
         request.Headers.Add("Authorization", "Token " + token);
         request.Headers.Add("X-Secret", secret);
 
         using var response = await httpClient.SendAsync(request);
         string responseText = await response.Content.ReadAsStringAsync();
+
 
         return responseText;
 

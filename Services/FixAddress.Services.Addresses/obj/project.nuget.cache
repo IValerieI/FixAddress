@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sejesqK2W+bWkwCiWV210ydXlVFGeL1xoBV4eKz+gwdwLIwsidS/fR6TKkKN+hi1dlO5UK085WoR56XZ/PV37g==",
+  "dgSpecHash": "RJ7vFnjRVCRIQNvlok3gCUQpjV859ErTA1090gHuPAL7Nm+BdnGoMO96CNZA+U8IjOEg7BpZYBVHGkgFf/ru8g==",
   "success": true,
   "projectFilePath": "C:\\projects\\.NET\\Internship\\QPD\\Project\\Services\\FixAddress.Services.Addresses\\FixAddress.Services.Addresses.csproj",
   "expectedPackageFiles": [
@@ -17,7 +17,10 @@
     "C:\\Users\\Valeria\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\7.0.0\\microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Valeria\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\7.0.0\\microsoft.extensions.fileproviders.physical.7.0.0.nupkg.sha512",
     "C:\\Users\\Valeria\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\7.0.0\\microsoft.extensions.filesystemglobbing.7.0.0.nupkg.sha512",
-    "C:\\Users\\Valeria\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\Valeria\\.nuget\\packages\\microsoft.extensions.http\\7.0.0\\microsoft.extensions.http.7.0.0.nupkg.sha512",
+    "C:\\Users\\Valeria\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\Valeria\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Valeria\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\Valeria\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\Valeria\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
     "C:\\Users\\Valeria\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",

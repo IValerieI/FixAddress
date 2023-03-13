@@ -3,6 +3,8 @@ using FixAddress.Api.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.AddAppLogger();
+
 // Add services to the container.
 
 var services = builder.Services;
@@ -15,7 +17,12 @@ services.AddControllers();
 // Метод для подключения AutoMapper с уже указанными настройками
 services.AddAppAutoMapper();
 
+// Метод для подключения сервисов
 services.RegisterAppServices();
+
+// Для использования IHttpClientFactory в сервисе
+services.AddHttpClient();
+
 
 var app = builder.Build();
 
