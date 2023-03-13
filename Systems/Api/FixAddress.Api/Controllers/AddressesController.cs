@@ -21,7 +21,11 @@ public class AddressesController : ControllerBase
         this.addressService = addressService;
     }
 
-    // when added async - can Task<string> for string
+    /// <summary>
+    /// Возвращает AddressResponse с частью парметров из ответа от dadata
+    /// </summary>
+    /// <param name="brokenAddress"></param>
+    /// <returns></returns>
     [HttpGet("")]
     public async Task<AddressResponse> GetAddress([FromQuery] string brokenAddress)
     {
@@ -30,4 +34,21 @@ public class AddressesController : ControllerBase
 
         return response;
     }
+
+    /// <summary>
+    /// Возвращает полностью ответ от dadata
+    /// </summary>
+    /// <param name="brokenAddress"></param>
+    /// <returns></returns>
+    [HttpGet("detail")]
+    public async Task<string> GetAddressDetail([FromQuery] string brokenAddress)
+    {
+        System.Diagnostics.Debug.WriteLine(brokenAddress);
+        var result = await addressService.GetAddressDetail(brokenAddress);
+        System.Diagnostics.Debug.WriteLine("        !!!" + brokenAddress);
+
+        return result;
+    }
+
+
 }

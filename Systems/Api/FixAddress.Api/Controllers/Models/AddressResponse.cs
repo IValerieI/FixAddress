@@ -3,7 +3,9 @@ using FixAddress.Services.Addresses;
 
 namespace FixAddress.Api.Controllers.Models;
 
-
+/// <summary>
+/// Модель для отправки пользователю
+/// </summary>
 public class AddressResponse
 {
     public string Address { get; set; }

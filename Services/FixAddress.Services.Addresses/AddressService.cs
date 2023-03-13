@@ -1,26 +1,39 @@
 ﻿using AutoMapper;
 using Dadata;
 using Dadata.Model;
+using Microsoft.Extensions.Configuration;
+//using Newtonsoft.Json;
 
 namespace FixAddress.Services.Addresses;
 
 
 public class AddressService : IAddressService
 {
-    private readonly IMapper mapper;
+    string url;
+    private string token;
+    private string secret;
 
-    public AddressService(IMapper mapper)
+    private readonly IMapper mapper;
+    private readonly IConfiguration configuration;
+
+    public AddressService(IMapper mapper, IConfiguration configuration)
     {
         this.mapper = mapper;
+        this.configuration = configuration;
+
+        this.token = configuration.GetSection("Token").Value;
+        this.secret = configuration.GetSection("Secret").Value;
+        this.url = configuration.GetSection("URL").Value;
     }
 
 
+    /// <summary>
+    /// Возвращает AddressModel с частью парметров из ответа от dadata
+    /// </summary>
+    /// <param name="brokenAddress"></param>
+    /// <returns></returns>
     public async Task<AddressModel> GetAddress(string brokenAddress)
     {
-        // move token and secret to settings
-        var token = "f68cfa2adabf0f766554018492e3076488c8931c";
-        var secret = "4f29142cef836bbeeebfbde9fe65221c6850a067";
-
         var api = new CleanClientAsync(token, secret);
         var address = await api.Clean<Address>(brokenAddress);
 
@@ -28,4 +41,31 @@ public class AddressService : IAddressService
 
         return data;
     }
+
+    static HttpClient httpClient = new HttpClient();
+
+    /// <summary>
+    /// Возвращает полностью ответ от dadata
+    /// </summary>
+    /// <param name="brokenAddress"></param>
+    /// <returns></returns>
+    public async Task<string> GetAddressDetail(string brokenAddress)
+    {
+        StringContent content = new StringContent("[ \"" + brokenAddress + "\" ]", System.Text.Encoding.UTF8, "application/json");
+
+        using var request = new HttpRequestMessage(HttpMethod.Post, url);
+        request.Content = content;
+
+        request.Headers.Add("Authorization", "Token " + token);
+        request.Headers.Add("X-Secret", secret);
+
+        using var response = await httpClient.SendAsync(request);
+        string responseText = await response.Content.ReadAsStringAsync();
+
+        return responseText;
+
+    }
+
+
+
 }

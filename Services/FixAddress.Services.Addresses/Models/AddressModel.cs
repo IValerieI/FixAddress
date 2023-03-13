@@ -3,6 +3,10 @@ using Dadata.Model;
 
 namespace FixAddress.Services.Addresses;
 
+
+/// <summary>
+/// Модель для маппинга ответа от dadata
+/// </summary>
 public class AddressModel
 {
     public string Address { get; set; }
