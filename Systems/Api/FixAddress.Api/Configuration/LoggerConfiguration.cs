@@ -2,13 +2,11 @@
 
 using Serilog;
 
-/// <summary>
-/// Logger Configuration
-/// </summary>
+
 public static class LoggerConfiguration
 {
     /// <summary>
-    /// Add logger
+    /// Добавляет Logger
     /// </summary>
     public static void AddAppLogger(this WebApplicationBuilder builder)
     {
